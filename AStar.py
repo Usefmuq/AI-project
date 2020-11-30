@@ -1,16 +1,3 @@
-# N = 13;
-# G = new boolean[N][N];
-# setupGraph();
-# estCost = new int[N];
-# setupEstCost();
-# toCityCost = new int[N][N]; // cost among cities
-# btwCities();
-# funcGCost = new int[N]; // The cost so far to reach a city
-# funcFCost = new int[N]; // The estimated total cost through a city to the goal
-# calc = new boolean[N];
-# list_ = new Arraylist_<Integer>();
-
-
 N = 10
 G = [[0] * 10] * 10
 estCost = [0] * 10
