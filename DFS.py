@@ -1,7 +1,7 @@
 class DFS:
     def __init__(self, n):
         self.N = n
-        self.G = [[False] * self.N] * self.N
+        self.G = [[False for x in range(self.N)] for y in range(self.N)]
         self.Acc = [False] * self.N
         self.sta = []
         self.setupGraph()
@@ -12,7 +12,6 @@ class DFS:
         addToSta = " "
         self.sta.append(start)
         self.Acc[start] = True
-
         print(f"\t\tThe stack: [{self.retCity(self.sta[-1])}...top=>]\n")
 
         while True:
@@ -40,7 +39,7 @@ class DFS:
                 break
 
     def setupGraph(self):
-        self.G[0][1] = self.G[1][0] = True
+        self.G[1][0] = self.G[0][1] = True
         self.G[0][5] = self.G[5][0] = True
         self.G[0][6] = self.G[6][0] = True
         self.G[1][2] = self.G[2][1] = True

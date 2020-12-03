@@ -1,0 +1,46 @@
+Choose a city to start with(its number): 
+
+Business and Economics city[0]
+Science city[1]
+Engineering city[2]
+Architecture and Planning city[3]
+Sharia and Islamic Studies city[4]
+Medicine city[5]
+Qassim University Public Library city[6]
+Department of English & Translation city[7]
+Parking lot 1 city[8]
+Parking lot 2 city[9]
+
+Input: 0
+
+Choose a city to be the goal(its number): 
+
+Input: 3
+                The stack: [Business and Economics...top=>]
+
+-->At Business and Economics city now 
+Business and Economics has not been the goal,children [Science Medicine Qassim University Public Library ]'v been added to the stack
+The stack: [ Science ..Medicine ..Qassim University Public Library ..top=>]
+
+-->At Qassim University Public Library city now 
+Qassim University Public Library has not been the goal,children [Engineering Sharia and Islamic Studies Department of English & Translation ]'v been added to the stack
+The stack: [ Science ..Medicine ..Engineering ..Sharia and Islamic Studies ..Department of English & Translation ..top=>]
+
+-->At Department of English & Translation city now 
+Department of English & Translation has not been the goal,children [Parking lot 1 ]'v been added to the stack
+The stack: [ Science ..Medicine ..Engineering ..Sharia and Islamic Studies ..Parking lot 1 ..top=>]
+
+-->At Parking lot 1 city now 
+Parking lot 1 has not been the goal,children []'v been added to the stack
+The stack: [ Science ..Medicine ..Engineering ..Sharia and Islamic Studies ..top=>]
+
+-->At Sharia and Islamic Studies city now 
+Sharia and Islamic Studies has not been the goal,children []'v been added to the stack
+The stack: [ Science ..Medicine ..Engineering ..top=>]
+
+-->At Engineering city now 
+Engineering has not been the goal,children [Architecture and Planning ]'v been added to the stack
+The stack: [ Science ..Medicine ..Architecture and Planning ..top=>]
+
+
+The goal ( Architecture and Planning )has been reached

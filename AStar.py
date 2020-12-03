@@ -1,7 +1,7 @@
 N = 10
-G = [[0] * 10] * 10
+G = [[False for x in range(N)] for y in range(N)]
 estCost = [0] * 10
-toCityCost = [[0] * 10] * 10
+toCityCost = [[0 for x in range(N)] for y in range(N)]
 funcGCost = [0] * 10
 funcFCost = [0] * 10
 calc = [0] * 10
@@ -160,7 +160,9 @@ def main():
     global N, G, estCost, toCityCost, funcFCost, funcGCost, calc, list_
     setupGraph()
     setupEstCost()
+
     btwCities()
+    print(toCityCost)
 
     print("------------")
     start = int(input("enter the start : "))
