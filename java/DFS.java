@@ -1,5 +1,3 @@
-package java;
-
 import java.util.Scanner;
 import java.util.*;
 
@@ -63,23 +61,23 @@ public class DFS {
 
         G = new boolean[N][N];
 
-        G[0][1] = G[1][0] = True
-        G[0][5] = G[5][0] = True
-        G[0][6] = G[6][0] = True
-        G[1][2] = G[2][1] = True
-        G[1][3] = G[3][1] = True
-        G[1][6] = G[6][1] = True
-        G[1][9] = G[9][1] = True
-        G[2][3] = G[3][2] = True
-        G[2][4] = G[4][2] = True
-        G[2][6] = G[6][2] = True
-        G[3][9] = G[9][3] = True
-        G[4][6] = G[6][4] = True
-        G[4][7] = G[7][4] = True
-        G[5][6] = G[6][5] = True
-        G[5][7] = G[7][5] = True
-        G[6][7] = G[7][6] = True
-        G[7][8] = G[8][7] = True
+        G[0][1] = G[1][0] = true;
+        G[0][5] = G[5][0] = true;
+        G[0][6] = G[6][0] = true;
+        G[1][2] = G[2][1] = true;
+        G[1][3] = G[3][1] = true;
+        G[1][6] = G[6][1] = true;
+        G[1][9] = G[9][1] = true;
+        G[2][3] = G[3][2] = true;
+        G[2][4] = G[4][2] = true;
+        G[2][6] = G[6][2] = true;
+        G[3][9] = G[9][3] = true;
+        G[4][6] = G[6][4] = true;
+        G[4][7] = G[7][4] = true;
+        G[5][6] = G[6][5] = true;
+        G[5][7] = G[7][5] = true;
+        G[6][7] = G[7][6] = true;
+        G[7][8] = G[8][7] = true;
     }
 
     public static void main(String[] args) {
