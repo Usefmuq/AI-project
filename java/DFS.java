@@ -63,25 +63,30 @@ public class DFS {
 
         G = new boolean[N][N];
 
-        G[0][1] = G[1][0] = true;
-        G[0][8] = G[8][0] = true;
-        G[0][4] = G[4][0] = true;
-        G[1][2] = G[2][1] = true;
-        G[1][3] = G[3][1] = true;
-        G[2][6] = G[6][2] = true;
-        G[3][4] = G[4][3] = true;
-        G[3][5] = G[5][3] = true;
-        G[6][7] = G[7][6] = true;
-        G[8][9] = G[9][8] = true;
-        G[9][10] = G[10][9] = true;
-        G[10][11] = G[11][10] = true;
+        G[0][1] = G[1][0] = True
+        G[0][5] = G[5][0] = True
+        G[0][6] = G[6][0] = True
+        G[1][2] = G[2][1] = True
+        G[1][3] = G[3][1] = True
+        G[1][6] = G[6][1] = True
+        G[1][9] = G[9][1] = True
+        G[2][3] = G[3][2] = True
+        G[2][4] = G[4][2] = True
+        G[2][6] = G[6][2] = True
+        G[3][9] = G[9][3] = True
+        G[4][6] = G[6][4] = True
+        G[4][7] = G[7][4] = True
+        G[5][6] = G[6][5] = True
+        G[5][7] = G[7][5] = True
+        G[6][7] = G[7][6] = True
+        G[7][8] = G[8][7] = True
     }
 
     public static void main(String[] args) {
         int cityChoice, goal;
         Scanner inp = new Scanner(System.in);
         System.out.println("\n\nChoose a city to start with(its number): \n");
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 10; i++)
             System.out.println(retCity(i) + " city[" + i + "]");
         System.out.print("\nInput: ");
         cityChoice = inp.nextInt();
@@ -89,12 +94,12 @@ public class DFS {
         System.out.print("\nInput: ");
         goal = inp.nextInt();
 
-        if (cityChoice < 0 || cityChoice >= 12) {
+        if (cityChoice < 0 || cityChoice >= 10) {
             System.out.println("Mistake,run the program again");
             System.exit(0);
         }
 
-        DFS schDFS = new DFS(12);
+        DFS schDFS = new DFS(10);
         schDFS.DFS(cityChoice, goal);
 
     }
@@ -102,28 +107,24 @@ public class DFS {
     public static String retCity(int i) // the function returns city name, according to its index in V array
     {
         if (i == 0)
-            return "Buraydah";
+            return "Business and Economics";
         else if (i == 1)
-            return "Unayzah";
+            return "Science";
         else if (i == 2)
-            return "AlZulfi";
+            return "Engineering";
         else if (i == 3)
-            return "Al-Badai";
+            return "Architecture and Planning";
         else if (i == 4)
-            return "Riyadh-Alkhabra";
+            return "Sharia and Islamic Studies";
         else if (i == 5)
-            return "AlRass";
+            return "Medicine";
         else if (i == 6)
-            return "UmSedrah";
+            return "Qassim University Public Library";
         else if (i == 7)
-            return "Shakra";
+            return "Department of English & Translation";
         else if (i == 8)
-            return "Al-Bukayriyah";
-        else if (i == 9)
-            return "Sheehyah";
-        else if (i == 10)
-            return "Dhalfa";
+            return "Parking lot 1";
         else
-            return "Mulida";
+            return "Parking lot 2";
     }
 }
